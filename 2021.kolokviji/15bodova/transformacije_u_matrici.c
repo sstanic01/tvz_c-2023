@@ -75,15 +75,15 @@ int main() {
                     minRedak = i + 1;
                     minStupac = j + 1;
                 }
-            else if (matrica[i][j] == max) {
-                    if (i + 1 < maxRedak) {
-                        max = matrica[i][j];
-                        maxRedak = i + 1;
-                        maxStupac = j + 1;
-                    } else if (j + 1 < maxStupac) {
-                        max = matrica[i][j];
-                        maxRedak = i + 1;
-                        maxStupac = j + 1;
+            else if (matrica[i][j] == min) {
+                    if (i + 1 < minRedak) {
+                        min = matrica[i][j];
+                        minRedak = i + 1;
+                        minStupac = j + 1;
+                    } else if (j + 1 < minStupac) {
+                        min = matrica[i][j];
+                        minRedak = i + 1;
+                        minStupac = j + 1;
                     }
                 }
         }
